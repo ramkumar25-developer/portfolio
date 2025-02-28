@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color:aqua;
+    cursor: default;
+    position: relative;
+    left: -50px;
+}
+
+.block {
+    background: linear-gradient(90deg, #001f3f, #00FFFF);
+    width: 100%;
+    height: 5%;
+    display: flex;
+    position: fixed;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.block:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.top a {
+    font-size: 1.3em;
+    color: rgb(41, 75, 74);
+    margin-right: 40px;
+    font-weight: 550;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.top a:hover {
+    color:black;
+    text-decoration: underline;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.content {
+    max-width: 800px;
+    color: #f6f3f3;
+}
+
+.content h2 {
+    font-size: 4.5em;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.content span {
+    color: aqua;
+}
+
+.content h4 {
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "Creative Developer";
+    color: aliceblue;
+    animation: words 20s infinite;
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "a Creative developer";
+    }
+    21%, 40% {
+        content: "a Curious Technologist";
+    }
+    41%, 60% {
+        content: "an Innovative Problem Solver";
+    }
+    61%, 80% {
+        content: "an User-Centric Innovator";
+    }
+    81%, 100% {
+        content: "an Automation Champion";
+    }
+}
+
+.para {
+    max-width: 650px;
+}
+
+.content p {
+    padding: 25px 0 40px 0;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.resume {
+    padding-top: 30px;
+    display: inline-block;
+}
+
+.resume a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px 60px;
+    margin-right: 100px;
+    background: aqua;
+    border-radius: 25px;
+    border: 2px solid aqua;
+    font-weight: 550;
+    font-size: 1.2em;
+}
+
+.resume a:nth-child(1) {
+    color: aqua;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 40px;
+    font-size: 1.2em;
+}
+
+.resume a:hover:nth-child(1) {
+    color: black;
+    background-color: aqua;
+}
+
+.social-icons {
+    display: inline-block; 
+    margin-left: 20px; 
+    vertical-align: middle; 
+}
+
+.social-icons a {
+    color: aqua;
+    font-size: 2em;
+    transition: all 0.3s ease;
+    margin-right: 35px;
+    display: inline-block; 
+}
+
+.social-icons a:last-child {
+    margin-right: 0; 
+}
+
+.social-icons a:hover {
+    color: #00FFFF; 
+    transform: scale(1.2); 
+    filter: drop-shadow(0 0 8px currentColor); 
+}
+
+
+
+/* Projects Section */
+
+.projects {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/Blu.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.projects-title {
+    padding-top: 70px;
+    position: relative;
+    right: 600px;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.project-item {
+    background: rgba(3, 14, 100, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px aqua;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover img {
+    opacity: 0.8;
+}
+
+.project-item a {
+    display: block;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* About Section */
+.about {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/abg.jpg); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.about-title {
+    font-size: 3em;
+    color: #f6f3f3;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-item {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.5);
+}
+
+.about-item h3 {
+    font-size: 1.5em;
+    color:gold;
+    margin-bottom: 15px;
+}
+
+.about-item p {
+    font-size: 1.1em;
+    color: #f6f3f3;
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.skills-title {
+    font-size: 2.5em;
+    color: #f6f3f3;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skills-grid img:hover {
+    transform: scale(1.1);
+}
+
+.responsive-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 900px), only screen and (max-height: 660px) {
+
+    body * {
+        display: none !important;
+    }
+    .responsive-message {
+        display: block !important;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background: black;
+    }
+}
